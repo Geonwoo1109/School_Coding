@@ -4,7 +4,7 @@ main() {
 	
 	//printf("%c  %d", 'A', 'A');
 	
-	int n;
+	int n, Bn=2;
 	
 	scanf("%d", &n);
 	
@@ -15,5 +15,9 @@ main() {
 			else continue;
 		}
 		printf("%c %d\n", (i == j) ? 'o' : 'x', i);
+		Bn = (i == j) ? i : Bn;
+		
 	}
+	
+	printf("\n%d까지의 자연수 중 가장 큰 소수: %d", n, Bn);
 }
